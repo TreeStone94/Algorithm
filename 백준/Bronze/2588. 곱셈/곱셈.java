@@ -5,21 +5,12 @@ public class Main{
     public static void main(String[] args) {
 
         int a =scan.nextInt();
-        String b =scan.next();
-        int increaseIndex = 10;
-        int y= 0;
-        for(int i=b.length()-1; i>=0;i--) {
-            int x = a* Integer.parseInt(String.valueOf(b.charAt(i)));
-            System.out.println(x);
-            if(i == b.length()-1) {
-                y += x;
-            } else {
-                y += (x * increaseIndex);
-                increaseIndex *= increaseIndex;
-            }
-        }
+        int b = scan.nextInt();
 
-        System.out.println(y);
+        System.out.println(a * (b%10));
+        System.out.println(a * (b%100 / 10));
+        System.out.println(a * (b%1000 / 100));
+        System.out.println(a*b);
 
 
     }
