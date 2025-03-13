@@ -1,7 +1,7 @@
 a, b = list(map(str,input().split()))
 
-ra = int(''.join(reversed(a)))
-rb = int(''.join(reversed(b)))
+ra = int(a[::-1])
+rb = int(b[::-1])
 
 if ra > rb:
     print(ra)
