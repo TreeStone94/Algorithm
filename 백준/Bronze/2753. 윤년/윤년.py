@@ -1,6 +1,6 @@
-x = int(input())
+n = int(input())
 
-if x % 4 == 0 and (x % 100 != 0 or x % 400 == 0):
-    print("1")
+if n % 4 == 0 and (n % 100 != 0 or n % 400 == 0):
+    print(1)
 else:
-    print("0")
+    print(0)
