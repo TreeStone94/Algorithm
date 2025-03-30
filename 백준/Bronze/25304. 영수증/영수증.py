@@ -1,14 +1,12 @@
-amount = int(input())
-cnt = int(input())
+p = int(input())
+n = int(input())
 
-compareAmount = 0
+pa = []
+for _ in range(n):
+    x, y = map(int, input().split())
+    pa.append(x * y)
 
-for _ in range(cnt):
-    x,z = map(int, input().split())
-    compareAmount += x*z
-
-
-if amount == compareAmount:
-    print("Yes")
+if p == sum(pa):
+    print('Yes')
 else:
-    print("No")
+    print('No')
