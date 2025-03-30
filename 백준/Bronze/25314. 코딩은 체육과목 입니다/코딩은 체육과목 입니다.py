@@ -1,8 +1,6 @@
-byte = int(input())
+n = int(input())
 
-cnt = int(byte / 4)
-str = ""
-for _ in range(cnt):
-    str += "long "
+for _ in range(n // 4):
+    print('long', end=" ")
 
-print(str + "int")
+print('int')
