@@ -8,9 +8,7 @@ answer = ''
 
 for i in range(15):
     for j in range(5):
-        try:
+        if i < len(a[j]):
             answer += a[j][i]
-        except IndexError:
-            continue
 
 print(answer)
