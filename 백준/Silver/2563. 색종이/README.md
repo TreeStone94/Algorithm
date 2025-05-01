@@ -30,3 +30,4 @@
 
  <p>첫째 줄에 색종이가 붙은 검은 영역의 넓이를 출력한다.</p>
 
+![이름 없는 노트북](https://github.com/user-attachments/assets/4e7b7f3a-3ef2-4b6d-a997-052fbfaa5595)
