@@ -1,14 +1,13 @@
-from itertools import permutations
+from itertools import combinations
 
-n, m = map(int,input().split())
+n,m = map(int, input().split())
+arr = list(map(int, input().split()))
+result = []
 
-arr = list(map(int,input().split()))
-result = list(permutations(arr, 3))
+for a in list(combinations(arr,3)):
+    if sum(a) > m:
+        continue
+    else:
+        result.append(a)
 
-max_ = 0
-for perm in result:
-    s = sum(perm)
-    if s <= m and s > max_:
-        max_ = s
-
-print(max_)
+print(sum(max(result)))
