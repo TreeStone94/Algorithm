@@ -36,3 +36,23 @@
 
  <p>첫째 줄에 M을 넘지 않으면서 M에 최대한 가까운 카드 3장의 합을 출력한다.</p>
 
+
+### permutations
+서로 다른 n개에서 r개를 선택할 때 중복없이 뽑는 방법 (순서를 고려하여 뽑음)
+
+### combinations
+서로 다른 n개에서 r개를 선택할 때 중복 없이 뽑는 방법(순서를 고려하지 않음)
+
+
+```python
+from itertools import permutations
+from itertools import combinations
+
+arr = [1,2,3,5,6]
+result = list(permutations(arr,3))
+result2 = list(combinations(arr,3))
+
+print(result)
+print(result2)
+
+```
