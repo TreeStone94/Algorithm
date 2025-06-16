@@ -1,10 +1,8 @@
 import sys
 
-# 입력 개수
-N = int(sys.stdin.readline())
+n = int(input())
 
-# 리스트에 입력값 저장
-arr = [int(sys.stdin.readline()) for _ in range(N)]
+arr = [int(sys.stdin.readline()) for _ in range(n)]
 
 for a in sorted(arr):
     print(a)
