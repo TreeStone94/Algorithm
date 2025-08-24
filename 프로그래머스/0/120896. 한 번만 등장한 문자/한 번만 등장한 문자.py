@@ -1,14 +1,8 @@
 def solution(s):
-    hash_s = {}
+    answer = ""
     for c in s:
-        if c in hash_s:
-            hash_s[c] += 1
-        else:
-            hash_s[c] = 1
+        if s.count(c) == 1:
+            answer += c
             
-    answer = ''
-    for h in hash_s:
-        if hash_s[h] == 1:
-            answer += h
-    
+  
     return "".join(sorted(answer))
