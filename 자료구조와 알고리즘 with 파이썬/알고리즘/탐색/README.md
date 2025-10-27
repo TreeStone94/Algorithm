@@ -42,3 +42,56 @@ def sequential_search(A, key, low, high):
     			return i
     		return -1
     ```
+    
+## 이진 탐색
+
+한 번 비교할 때마다 탐색 범위가 절반으로 줄어들기 때문에 ‘이진’이라 부름
+
+데이터가 키값 기준에서 정렬되어 있을 때 이진 탐색 알고리즘이 효율적
+
+```python
+# 순환 구조
+def binary_search(A, key, low, high):
+	if (low <= high):
+		middle = (low + high)//2
+		if key == A[middle]:
+			return middle
+		elif (key < A[middle]):
+			return binary_search(A, key, low, middle-1)
+		else:
+			return binary_search(A, key, middle + 1, high)
+	return -1
+	
+# 반복 구조
+def binary_search_iter(A, key, low, high):
+	while (low <= high):
+		middle = (low + high) // 2
+		if key = A[middle]:
+			return middle
+		else (low < A[middle]):
+			high = middle -1
+		else:
+			low = middle + 1
+	return -1
+```
+
+### 이진 탐색의 특징
+
+- 시간복잡도가 ○(log₂n)인 매우 효율적인 탐색 방법
+- 반드시 배열이 정렬되어 있어야 사용 가능
+- 데이터가 한번 만들어지면 이후로 변경되지 않고 탐색 연산만 처리한다면 이진 탐색이 최고의 선택 중 하나
+- 데이터의 삽입이나 삭제가 빈번한 응용에는 이진 탐색이 비효율적
+
+### 보간 탐색
+
+탐색 키가 존재할 위치를 예측하여 탐색하는 방법
+
+탐색 범위 가장자리(low, high)에 있는 데이터의 키값과 탐색 키의 비율을 고려하여 위치를 계산
+
+![스크린샷 2025-10-28 오전 2.35.55.png](attachment:531ccd5c-2ca8-414a-9714-c0f0bf50578e:스크린샷_2025-10-28_오전_2.35.55.png)
+
+이진 탐색 함수에서 middle 계산만 다음과 같이 수정하면 됨
+
+```python
+middle = int(low+ (high-low)* (key-A[low]) / (A[high]-A[low[))
+```
