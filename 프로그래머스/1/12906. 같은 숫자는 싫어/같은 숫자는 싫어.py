@@ -1,14 +1,12 @@
-import collections
-
 def solution(arr):
     answer = []
-    
-    dq = collections.deque(arr)
-
-    preNum = - 1
-    while dq:
-        num = dq.popleft()
-        if preNum != num :
-            answer.append(num)
-        preNum = num
+    arr.reverse()
+    while len(arr) > 0:
+        l = len(answer)
+        a = arr.pop()
+        if l == 0:
+            answer.append(a)
+        elif answer[l-1] != a:
+            answer.append(a)
+           
     return answer
