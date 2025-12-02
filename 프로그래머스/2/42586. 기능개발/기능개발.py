@@ -25,13 +25,11 @@ def solution(progresses, speeds):
             day += 1
         days.append(day)
 
-    print(days)
     count = 0
 
     while days:
         day = days.pop()
         count += 1
-        print(days, len(days))
         while days and day >= days[-1]:
             days.pop()
             count += 1
