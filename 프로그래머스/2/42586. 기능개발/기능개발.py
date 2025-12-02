@@ -1,33 +1,41 @@
-
-import math
-
 def solution(progresses, speeds):
     answer = []
-    
-    
+
+    """
+        progresses별 작업 일자 구하는 방법
+            1. 100 - 30 = 70
+            2. 70//30 = 2
+            3. 70%30 != 0 -> 1
+
+        배포 카운트 구하는 방법
+            작업 일자 [1, 20, 1, 1, 10, 5]
+            작업 일자가 없을때 까지
+            day = 작업일자.pop()
+            if day >= 작업일자[nextIndex]
+                    작업일자.pop()
+
+    """
     days = []
-    for i in range(len(progresses)):
-        day = math.ceil((100 - progresses[i]) / speeds[i])
+    while progresses:
+        progress = progresses.pop()
+        speed = speeds.pop()
+        remain_progress = 100 - progress
+        day = remain_progress // speed
+        if remain_progress % speed != 0:
+            day += 1
         days.append(day)
 
-    count = 1
-    currentDay = days[0]
-    for d in days[1:]:
-        if d <= currentDay:
+    print(days)
+    count = 0
+
+    while days:
+        day = days.pop()
+        count += 1
+        print(days, len(days))
+        while days and day >= days[-1]:
+            days.pop()
             count += 1
-        else:
-            answer.append(count)
-            count = 1
-            currentDay = d
-    answer.append(count)
-    
-   
-    # 작업속도와 진행률
-    # 첫번째 작업이 7일, 두번째 3일, 세번째 9일
-    # 7일 pop, 이전 index와 비교 이전 인덱스보다 작으면 count
-    
-    # 문제의 의도: 선입선출로 먼저들어온 진행률이 끝날때 까지 기다렸다가 같이 배포해야한다.
-    
-                
-        
+        answer.append(count)
+        count = 0
+
     return answer
