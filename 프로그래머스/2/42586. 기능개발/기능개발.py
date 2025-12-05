@@ -1,19 +1,25 @@
-from collections import deque
-
 def solution(progresses, speeds):
-    answer = []
-
-    days = deque()
-    for progress, speed in zip(progresses, speeds):
+    """
+        1. 날짜구하기
+        100 - 93 = 
+        7//speed  = 7
+        2. pop, append
+        [7,3,9]
+    """
+    days = []
+    while progresses:
+        progress = progresses.pop()
+        speed = speeds.pop()
         day = -(-(100 - progress) // speed)
         days.append(day)
-
+    
+    answer = []
     while days:
-        current_day = days.popleft()
         count = 1
-        while days  and current_day >= days[0]:
-            days.popleft()
+        day = days.pop()
+        while days and day >= days[-1]:
+            days.pop()
             count +=1
         answer.append(count)
-
+    
     return answer
