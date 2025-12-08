@@ -16,20 +16,13 @@ class RecentCounter:
     def ping(self, t: int) -> int:
         # 요청수 저장
         self.requests.append(t)
-        # 카운트 선언
-        count = 0
 
         # t -3000 보다 첫번째 큐가 작으면 pop
-        if self.requests and self.requests[0] < t -3000:
+        while self.requests and self.requests[0] < t -3000:
             self.requests.popleft()
 
-        # [t- 3000, t] 범위에 있는 카운트 계산
-        for request in self.requests :
-            if t - 3000 <= request <= t:
-                count +=1
-
         # 카운트 리턴
-        return count
+        return len(self.requests)
 
 
 # Your RecentCounter object will be instantiated and called as such:
