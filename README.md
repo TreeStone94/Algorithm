@@ -21,4 +21,16 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0735-asteroid-collision](https://github.com/TreeStone94/Algorithm/tree/master/0735-asteroid-collision) |
+## Design
+|  |
+| ------- |
+| [0933-number-of-recent-calls](https://github.com/TreeStone94/Algorithm/tree/master/0933-number-of-recent-calls) |
+## Queue
+|  |
+| ------- |
+| [0933-number-of-recent-calls](https://github.com/TreeStone94/Algorithm/tree/master/0933-number-of-recent-calls) |
+## Data Stream
+|  |
+| ------- |
+| [0933-number-of-recent-calls](https://github.com/TreeStone94/Algorithm/tree/master/0933-number-of-recent-calls) |
 <!---LeetCode Topics End-->
