@@ -1,30 +1,39 @@
-import collections
-
+from collections import deque
 def solution(bridge_length, weight, truck_weights):
     answer = 0
+    # 다리를 건너는 트럭에 대한 선언
+    brige_trunks = deque([0] * bridge_length)
     
-    # 1. 필요한 변수들 초기화
-    bridge = collections.deque([0] * bridge_length)
-    truck_weights = collections.deque(truck_weights)
-    current_bridge_weight = 0
-
-    # bridge 큐가 존재할 동안 계속 반복 (시간이 흐름)
-    while bridge:
-        answer += 1 # 1초 경과
-
-        # 2. 다리 끝에 도달한 트럭 내리기
-        finished_truck = bridge.popleft()
-        current_bridge_weight -= finished_truck
-
-        # 3. 대기 트럭이 있다면, 다리에 올릴지 결정
-        if truck_weights:
-            if current_bridge_weight + truck_weights[0] <= weight:
-                # Case 1: 트럭을 올릴 수 있음
-                new_truck = truck_weights.popleft()
-                bridge.append(new_truck)
-                current_bridge_weight += new_truck
-            else:
-                # Case 2: 무게 초과로 못 올림
-                bridge.append(0) # 빈 공간을 추가
+    # 대기트럭 큐로 변경
+    trucks = deque(truck_weights)
     
+    # 다리이 올라간 트럭들의 합
+    brige_truck_weight = 0
+    
+    # 대기트럭이다 없어질때 까지 시간 계산
+    while brige_trunks:
+        answer += 1  # 시간 1초 증가 (맨 위에)
+
+      # TODO 1: 다리 맨 앞 트럭이 빠져나가는지 확인
+      # brige_trunks.popleft() 했을 때 나온 값이 0이 아니면?
+      # -> brige_truck_weight에서 빼줘야겠죠?
+        brige_trunk = brige_trunks.popleft()
+        if brige_trunk != 0:
+            brige_truck_weight -= brige_trunk
+        
+      # TODO 2: 새 트럭을 다리에 올릴 수 있는지 확인
+      # trucks가 있고 + (brige_truck_weight + 새트럭무게 <= weight) 이면?
+      # -> trucks.popleft()해서 다리에 올리고
+      # -> brige_trunks.append(트럭무게)
+      # -> brige_truck_weight에 더하기
+        if trucks and brige_truck_weight + trucks[0] <= weight:
+            truck = trucks.popleft()
+            brige_trunks.append(truck)
+            brige_truck_weight += truck
+      # TODO 3: 새 트럭을 못 올리면?
+      # -> brige_trunks.append(0)  # 빈 공간
+        elif trucks and brige_truck_weight + trucks[0] > weight:
+            brige_trunks.append(0)
+
+        
     return answer
