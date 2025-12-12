@@ -1,31 +1,32 @@
 from collections import deque
-
 class Solution:
     def predictPartyVictory(self, senate: str) -> str:
-        # 각 정당의 상원의원 인덱스를 저장하는 큐
-        radiant = deque()
-        dire = deque()
+        
+        # R 정당, D 정당 나누어 index 저장
+        r_senate = deque()
+        d_senate = deque()
         n = len(senate)
-        
-        # 초기 인덱스 설정
-        for i, s in enumerate(senate):
-            if s == 'R':
-                radiant.append(i)
+
+        for i in range(len(senate)):
+            if senate[i] == 'R':
+                r_senate.append(i)
             else:
-                dire.append(i)
+                d_senate.append(i)
         
-        # 한 쪽이 모두 제거될 때까지 반복
-        while radiant and dire:
-            r_index = radiant.popleft()
-            d_index = dire.popleft()
-            
-            # 더 앞선 순서(작은 인덱스)가 상대를 제거
-            if r_index < d_index:
-                # Radiant가 이김 - 다음 라운드를 위해 큐 뒤에 추가
-                radiant.append(r_index + n)
+        # R 이랑 D 어떤 index 더 큰지 비교하여 발업권 부여하거 발탁
+        while r_senate and d_senate:
+            r_senate_index = r_senate.popleft()
+            d_senate_index = d_senate.popleft()
+
+            # 0,1 0 
+            if r_senate_index > d_senate_index:
+                d_senate.append(r_senate_index + n)
             else:
-                # Dire가 이김 - 다음 라운드를 위해 큐 뒤에 추가
-                dire.append(d_index + n)
+                r_senate.append(d_senate_index + n)
         
-        # 남아있는 쪽이 승리
-        return "Radiant" if radiant else "Dire"
+
+        # 정당 승자 누구인지 리턴
+        if r_senate:
+            return 'Radiant'
+        else:
+            return 'Dire'
