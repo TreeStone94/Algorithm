@@ -20,9 +20,9 @@ class Solution:
 
             # 0,1 0 
             if r_senate_index > d_senate_index:
-                d_senate.append(r_senate_index + n)
+                d_senate.append(d_senate_index + n)
             else:
-                r_senate.append(d_senate_index + n)
+                r_senate.append(r_senate_index + n)
         
 
         # 정당 승자 누구인지 리턴
