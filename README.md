@@ -39,4 +39,12 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0649-dota2-senate](https://github.com/TreeStone94/Algorithm/tree/master/0649-dota2-senate) |
+## Linked List
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/TreeStone94/Algorithm/tree/master/0206-reverse-linked-list) |
+## Recursion
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/TreeStone94/Algorithm/tree/master/0206-reverse-linked-list) |
 <!---LeetCode Topics End-->
