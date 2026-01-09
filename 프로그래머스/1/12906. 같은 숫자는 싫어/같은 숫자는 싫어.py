@@ -1,12 +1,16 @@
+from collections import deque
 def solution(arr):
     answer = []
-    arr.reverse()
-    while len(arr) > 0:
-        l = len(answer)
-        a = arr.pop()
-        if l == 0:
+    
+    arr = deque(arr)
+    
+    while arr:
+        a = arr.popleft()
+        if arr and a != arr[0]:
             answer.append(a)
-        elif answer[l-1] != a:
+            
+        if not arr:
             answer.append(a)
-           
+        
+        
     return answer
