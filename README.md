@@ -21,6 +21,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 ## Array
 |  |
 | ------- |
+| [0200-number-of-islands](https://github.com/TreeStone94/Algorithm/tree/master/0200-number-of-islands) |
 | [0735-asteroid-collision](https://github.com/TreeStone94/Algorithm/tree/master/0735-asteroid-collision) |
 ## Design
 |  |
@@ -47,4 +48,20 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0206-reverse-linked-list](https://github.com/TreeStone94/Algorithm/tree/master/0206-reverse-linked-list) |
+## Depth-First Search
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/TreeStone94/Algorithm/tree/master/0200-number-of-islands) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/TreeStone94/Algorithm/tree/master/0200-number-of-islands) |
+## Union Find
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/TreeStone94/Algorithm/tree/master/0200-number-of-islands) |
+## Matrix
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/TreeStone94/Algorithm/tree/master/0200-number-of-islands) |
 <!---LeetCode Topics End-->
