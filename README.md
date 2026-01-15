@@ -64,4 +64,16 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/TreeStone94/Algorithm/tree/master/0200-number-of-islands) |
+## Math
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/TreeStone94/Algorithm/tree/master/0070-climbing-stairs) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/TreeStone94/Algorithm/tree/master/0070-climbing-stairs) |
+## Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/TreeStone94/Algorithm/tree/master/0070-climbing-stairs) |
 <!---LeetCode Topics End-->
