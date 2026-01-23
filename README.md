@@ -22,6 +22,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/TreeStone94/Algorithm/tree/master/0200-number-of-islands) |
+| [0643-maximum-average-subarray-i](https://github.com/TreeStone94/Algorithm/tree/master/0643-maximum-average-subarray-i) |
 | [0735-asteroid-collision](https://github.com/TreeStone94/Algorithm/tree/master/0735-asteroid-collision) |
 ## Design
 |  |
@@ -76,4 +77,8 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/TreeStone94/Algorithm/tree/master/0070-climbing-stairs) |
+## Sliding Window
+|  |
+| ------- |
+| [0643-maximum-average-subarray-i](https://github.com/TreeStone94/Algorithm/tree/master/0643-maximum-average-subarray-i) |
 <!---LeetCode Topics End-->
