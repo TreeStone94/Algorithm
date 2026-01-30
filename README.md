@@ -24,6 +24,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | [0200-number-of-islands](https://github.com/TreeStone94/Algorithm/tree/master/0200-number-of-islands) |
 | [0643-maximum-average-subarray-i](https://github.com/TreeStone94/Algorithm/tree/master/0643-maximum-average-subarray-i) |
 | [0735-asteroid-collision](https://github.com/TreeStone94/Algorithm/tree/master/0735-asteroid-collision) |
+| [0997-find-the-town-judge](https://github.com/TreeStone94/Algorithm/tree/master/0997-find-the-town-judge) |
 ## Design
 |  |
 | ------- |
@@ -81,4 +82,12 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0643-maximum-average-subarray-i](https://github.com/TreeStone94/Algorithm/tree/master/0643-maximum-average-subarray-i) |
+## Hash Table
+|  |
+| ------- |
+| [0997-find-the-town-judge](https://github.com/TreeStone94/Algorithm/tree/master/0997-find-the-town-judge) |
+## Graph Theory
+|  |
+| ------- |
+| [0997-find-the-town-judge](https://github.com/TreeStone94/Algorithm/tree/master/0997-find-the-town-judge) |
 <!---LeetCode Topics End-->
