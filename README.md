@@ -22,6 +22,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/TreeStone94/Algorithm/tree/master/0001-two-sum) |
+| [0128-longest-consecutive-sequence](https://github.com/TreeStone94/Algorithm/tree/master/0128-longest-consecutive-sequence) |
 | [0200-number-of-islands](https://github.com/TreeStone94/Algorithm/tree/master/0200-number-of-islands) |
 | [0217-contains-duplicate](https://github.com/TreeStone94/Algorithm/tree/master/0217-contains-duplicate) |
 | [0347-top-k-frequent-elements](https://github.com/TreeStone94/Algorithm/tree/master/0347-top-k-frequent-elements) |
@@ -89,6 +90,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/TreeStone94/Algorithm/tree/master/0001-two-sum) |
+| [0128-longest-consecutive-sequence](https://github.com/TreeStone94/Algorithm/tree/master/0128-longest-consecutive-sequence) |
 | [0217-contains-duplicate](https://github.com/TreeStone94/Algorithm/tree/master/0217-contains-duplicate) |
 | [0347-top-k-frequent-elements](https://github.com/TreeStone94/Algorithm/tree/master/0347-top-k-frequent-elements) |
 | [0997-find-the-town-judge](https://github.com/TreeStone94/Algorithm/tree/master/0997-find-the-town-judge) |
@@ -121,4 +123,8 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/TreeStone94/Algorithm/tree/master/0347-top-k-frequent-elements) |
+## Union-Find
+|  |
+| ------- |
+| [0128-longest-consecutive-sequence](https://github.com/TreeStone94/Algorithm/tree/master/0128-longest-consecutive-sequence) |
 <!---LeetCode Topics End-->
