@@ -6,6 +6,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 ## String
 |  |
 | ------- |
+| [0242-valid-anagram](https://github.com/TreeStone94/Algorithm/tree/master/0242-valid-anagram) |
 | [0649-dota2-senate](https://github.com/TreeStone94/Algorithm/tree/master/0649-dota2-senate) |
 | [2390-removing-stars-from-a-string](https://github.com/TreeStone94/Algorithm/tree/master/2390-removing-stars-from-a-string) |
 ## Stack
@@ -94,6 +95,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 | [0001-two-sum](https://github.com/TreeStone94/Algorithm/tree/master/0001-two-sum) |
 | [0128-longest-consecutive-sequence](https://github.com/TreeStone94/Algorithm/tree/master/0128-longest-consecutive-sequence) |
 | [0217-contains-duplicate](https://github.com/TreeStone94/Algorithm/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/TreeStone94/Algorithm/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/TreeStone94/Algorithm/tree/master/0347-top-k-frequent-elements) |
 | [0997-find-the-town-judge](https://github.com/TreeStone94/Algorithm/tree/master/0997-find-the-town-judge) |
 ## Graph Theory
@@ -104,6 +106,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0217-contains-duplicate](https://github.com/TreeStone94/Algorithm/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/TreeStone94/Algorithm/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/TreeStone94/Algorithm/tree/master/0347-top-k-frequent-elements) |
 ## Divide and Conquer
 |  |
