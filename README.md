@@ -6,6 +6,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 ## String
 |  |
 | ------- |
+| [0125-valid-palindrome](https://github.com/TreeStone94/Algorithm/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/TreeStone94/Algorithm/tree/master/0242-valid-anagram) |
 | [0649-dota2-senate](https://github.com/TreeStone94/Algorithm/tree/master/0649-dota2-senate) |
 | [2390-removing-stars-from-a-string](https://github.com/TreeStone94/Algorithm/tree/master/2390-removing-stars-from-a-string) |
@@ -132,4 +133,8 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/TreeStone94/Algorithm/tree/master/0128-longest-consecutive-sequence) |
+## Two Pointers
+|  |
+| ------- |
+| [0125-valid-palindrome](https://github.com/TreeStone94/Algorithm/tree/master/0125-valid-palindrome) |
 <!---LeetCode Topics End-->
